@@ -1,0 +1,321 @@
+/*Letra google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(233, 233, 233);
+    overflow-x: hidden;
+    color: #000000;
+}
+
+.Titulo {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px rgb(200, 200, 200);
+}
+
+#Black {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container-left {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: gray;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.item-submenu {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.submenu a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.item-submenu:hover .submenu {
+    display: block;
+}
+
+.container-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.container-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.user-icon {
+    font-size: 1.2rem;
+    color: rgb(49, 80, 255);
+}
+
+.Inicio {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boton-inicio {
+    padding: 15px 40px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: 700;
+    border-radius: 30%;
+}
+
+.Categoria, .Vendidos {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: rgb(59, 59, 59);
+    position: relative;
+    display: inline-block;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.grid-categorias article {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 300px;
+}
+
+.grid-categorias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.grid-categorias h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.Vendidos article {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.Vendidos img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #ffffff;
+}
+
+.info-producto {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info-producto h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.info-producto h3 {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+.info-producto button {
+    margin-top: auto;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(99, 99, 99);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.main-footer {
+    background-color: rgb(22, 22, 22);
+    color: #ffffff;
+    padding: 60px 10% 20px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.col h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.col a {
+    display: block;
+    color: #ccc;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.socials i {
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .main-nav {
+        display: none; 
+    }
+    
+    .container-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .container-search {
+        flex-grow: 1;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
